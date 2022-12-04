@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.4rem;
+  width: 50%;
+  align-items: center;
+}
+
+input {
+  text-align: center;
+}
+
+button {
+  width: 100%;
+}
+
+.result {
+  color: var(--red);
+  font-weight: bold;
+}
