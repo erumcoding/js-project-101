@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  width: 60%;
+  max-width: 450px;
+}
+
+.item {
+  display: none;
+}
+
+.show {
+  display: block;
+  animation: fadein 0.5s;
+}
+
+img {
+  width: 100%;
+}
+
+.buttons button {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.prev {
+  position: fixed;
+  top: 50%;
+  left: 10%;
+}
+
+.next {
+  position: fixed;
+  top: 50%;
+  right: 10%;
+}
