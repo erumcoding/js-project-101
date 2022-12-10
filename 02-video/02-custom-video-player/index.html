@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/common/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ErumCoding</title>
+  </head>
+  <body>
+    <div class="player">
+      <video>
+        <source src="./sample.mp4" type="video/mp4" />
+      </video>
+
+      <div class="controls">
+        <div class="progress">
+          <div class="bar"></div>
+        </div>
+
+        <div class="buttons">
+          <div class="menu">
+            <button class="play-pause">▸</button>
+            <span class="rate" data-rate="0.5">x0.5</span>
+            <span class="rate" data-rate="1">x1.0</span>
+            <span class="rate" data-rate="1.5">x1.5</span>
+            <span class="rate" data-rate="2">x2.0</span>
+          </div>
+
+          <div class="menu">
+            <input
+              type="range"
+              name="volume"
+              min="0.0"
+              max="1.0"
+              step="0.1"
+              value="0.5"
+            />
+
+            <div class="time">
+              <div class="current">00:00:00</div>
+              <div>/</div>
+              <div class="duration">00:00:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

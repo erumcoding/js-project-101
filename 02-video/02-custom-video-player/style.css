@@ -1,0 +1,98 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.player {
+  width: 80%;
+  max-width: 550px;
+  position: relative;
+  overflow: hidden;
+}
+
+.player:hover .controls {
+  transform: translateY(0);
+}
+
+video {
+  width: 100%;
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translateY(100%) translateY(-10px);
+  transition: all 0.3s;
+}
+
+.buttons {
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons button {
+  background: none;
+  outline: none;
+  width: 25px;
+  height: 25px;
+  border: 3px solid var(--white);
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bar {
+  height: 10px;
+  background-color: var(--yellow);
+}
+
+input[type='range'] {
+  width: 100px;
+  height: 10px;
+  background-color: var(--yellow);
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+input[type='range']:focus {
+  outline: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: var(--white);
+}
+
+.time {
+  display: flex;
+  column-gap: 3px;
+  font-size: 65%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.menu span {
+  font-size: 65%;
+  cursor: pointer;
+}
