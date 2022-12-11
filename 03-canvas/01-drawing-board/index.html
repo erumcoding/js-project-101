@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/common/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ErumCoding</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <div class="item">
+          <label for="color">Color</label>
+          <input type="color" name="color" id="color" />
+        </div>
+
+        <div class="item">
+          <label for="width">Width</label>
+          <input
+            type="number"
+            name="width"
+            id="width"
+            min="1"
+            max="10"
+            value="5"
+          />
+        </div>
+
+        <button class="clear">Clear</button>
+        <button class="save">Save to Image</button>
+      </div>
+
+      <canvas width="550" height="350"></canvas>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
