@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  padding-top: 30px;
+  width: 50%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.container button {
+  width: 100%;
+}
+
+.container ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
+}
+
+.container ul li {
+  display: flex;
+  column-gap: 10px;
+  background-color: var(--white);
+  width: 100%;
+  padding: 20px;
+  border-radius: 15px;
+  align-items: baseline;
+}
+
+.price {
+  color: var(--red);
+}
+
+.total {
+  font-weight: bold;
+  font-size: 160%;
+}
+
+.total-price {
+  color: var(--blue);
+}
+
+input[type='checkbox'] {
+  width: 15px;
+  height: 15px;
+}
