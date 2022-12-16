@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  color: white;
+  background-color: var(--blue);
+  border-radius: 8px;
+  filter: drop-shadow(8px 12px 12px hsl(0deg 0% 0% / 0.5));
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.current-weather {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.temp {
+  font-weight: bold;
+  font-size: 300%;
+}
+
+.info {
+  display: flex;
+  column-gap: 10px;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  background-color: var(--black);
+  border-radius: 100%;
+}
+
+.noti {
+  display: none;
+  margin-bottom: 20px;
+  color: var(--red);
+  font-weight: bold;
+  font-size: 120%;
+  text-align: center;
+  line-height: 160%;
+}
