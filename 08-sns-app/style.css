@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+a {
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--blue);
+}
+
+.container {
+  width: 550px;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.post,
+.profile {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 15px 10px -12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.profile {
+  align-items: center;
+  font-size: 150%;
+}
