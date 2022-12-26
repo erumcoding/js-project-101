@@ -72,13 +72,12 @@ const createItem = (product) => {
 const importData = () => {
   if (products) {
     myProducts = products.data;
+    myProducts.map((product) => {
+      if (!document.getElementById(product.id)) {
+        createItem(product);
+      }
+    });
   }
-
-  myProducts.map((product) => {
-    if (!document.getElementById(product.id)) {
-      createItem(product);
-    }
-  });
 };
 
 importData();
