@@ -79,7 +79,6 @@ const createElement = (listId, todo) => {
 
   list.appendChild(item);
   lists[listId].push(todo);
-  saveList(listId);
 };
 
 const createTodo = (event) => {
@@ -95,6 +94,7 @@ const createTodo = (event) => {
 
   createElement('todo', newTodo);
   input.value = '';
+  saveList('todo');
 };
 
 const loadList = () => {
