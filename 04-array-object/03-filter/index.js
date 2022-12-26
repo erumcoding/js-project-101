@@ -54,16 +54,14 @@ const createItem = (product) => {
 
 const importData = () => {
   if (products) {
+    select.selectedIndex = 0;
     myProducts = products.data;
+    myProducts.map((product) => {
+      if (!document.getElementById(product.id)) {
+        createItem(product);
+      }
+    });
   }
-
-  select.selectedIndex = 0;
-
-  myProducts.map((product) => {
-    if (!document.getElementById(product.id)) {
-      createItem(product);
-    }
-  });
 };
 
 button.addEventListener('click', importData);
