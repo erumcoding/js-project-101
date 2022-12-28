@@ -129,10 +129,37 @@
 
 ### Chapter 04. Array & Object
 
+- JSON 외부 데이터 가져와 사용하기
+- Javascript 외부 데이터 가져와 사용하기
+- `map`
+- `sort`
+- `filter`
+- `reduce`
+- `Intl.NumberFormat`
+
 ### Chapter 05. Trello (Kanban) App
+
+- UUID (`uuidv4`)
+- `dragabble`
+- `Object.keys`
+- `includes`
 
 ### Chapter 06. Weather App
 
+- API
+- OpenWeatherMap API
+- `.gitignore`
+- `navigator.geolocation`
+- `fetch`
+
 ### Chapter 07. Movie App
 
+- TheMovieDB API
+- `window.open`
+
 ### Chapter 08. SNS App
+
+- JSONPlaceHolder API
+- 비동기 처리의 필요성
+- `async` & `await`
+- 페이지 이동 구현 및 한계 이해하기
