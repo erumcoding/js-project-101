@@ -111,7 +111,6 @@
 - `event.offsetY`
 - `URL.createObjectURL`
 - `toBlob`
-- `append`
 - `click`
 
 #### 3-2. Meme Generator
