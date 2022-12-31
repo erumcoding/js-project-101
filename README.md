@@ -1,6 +1,4 @@
-# js-101-part-1
-
-자바스크립트 101 기본편 실습 코드
+# 자바스크립트 101 기본편
 
 - [이룸코딩 유튜브 채널](https://www.youtube.com/channel/UCRf6ut93gIImnmdebqdPI9A)
 - [이룸코딩 인프런 채널](https://www.inflearn.com/users/@dohaelee/courses)
