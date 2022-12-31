@@ -16,14 +16,9 @@ let lineWidth = 5;
 save.addEventListener('click', () => {
   canvas.toBlob((blob) => {
     const a = document.createElement('a');
-    const body = document.querySelector('body');
-
     a.href = URL.createObjectURL(blob);
     a.download = 'erumcoding.jpg';
-
-    body.append(a);
     a.click();
-    a.remove();
   });
 });
 
