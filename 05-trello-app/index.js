@@ -36,6 +36,10 @@ const saveList = (listId) => {
 const dragEnd = (event) => {
   const { id } = event.target;
 
+  if (from === to) {
+    return;
+  }
+
   event.target.remove();
   lists[from] = lists[from].filter((todo) => {
     if (todo.id !== id) {
@@ -62,6 +66,7 @@ const dragOver = (event) => {
 
 const dragStart = (event) => {
   from = event.target.parentElement.id;
+  to = from;
 };
 
 const createElement = (listId, todo) => {
