@@ -2,7 +2,7 @@
 
 import products from '../products.js';
 const button = document.querySelector('button');
-const asceButton = document.querySelector('.asceding');
+const asceButton = document.querySelector('.ascending');
 const descButton = document.querySelector('.descending');
 
 const removeItems = () => {
